@@ -1,16 +1,32 @@
-import logo from './logo.svg';
-import bgn_logo from './BGN-Logo.png'
+//Package Imports
 import './App.css';
+import { Routes, Route } from "react-router-dom";
+
+//Pages Imports
+import Construction from './Pages/Construction/Construction';
+import Discord from './Pages/Discord/Discord';
+import Error from './Pages/Error/Error';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={bgn_logo} className="App-logo" alt="logo" />
-        <p>We are currently under construction...</p>
-        <p>Keep an eye out for our shiny new website coming soon!</p>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route
+          path='/'
+          element={<Construction/>}
+        />
+        <Route
+          path='/discord'
+          element={<Discord/>}
+        />
+
+        
+        <Route
+          path='/*'
+          element={<Error/>}
+        />
+      </Routes>
+    </>
   );
 }
 

@@ -7,27 +7,32 @@ import { Routes, Route } from "react-router-dom";
 import Construction from './Pages/Construction/Construction';
 import Discord from './Pages/Discord/Discord';
 import Error from './Pages/Error/Error';
+import Navbar from './Components/Navbar/Navbar';
 
 function App() {
   return (
-    <div className='bg-bgngray h-screen'>
-      <Routes>
-        <Route
-          path='/'
-          element={<Construction/>}
-        />
-        <Route
-          path='/discord'
-          element={<Discord/>}
-        />
-
-        
-        <Route
-          path='/*'
-          element={<Error/>}
-        />
-      </Routes>
-    </div>
+    <>
+      <Navbar/>
+      <div className='bg-bgngray h-screen'>
+        <Routes>
+          <Route
+            path='/'
+            element={<Construction/>}
+          />
+          <Route
+            path='/discord'
+            element={<Discord/>}
+          />
+          
+          
+          <Route
+            path='/*'
+            element={<Error/>}
+          />
+        </Routes>
+      </div>
+    </>
+    
   );
 }
 

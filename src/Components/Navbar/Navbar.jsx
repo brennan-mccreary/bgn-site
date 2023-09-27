@@ -1,9 +1,11 @@
-const menu = document.querySelector(".mobile-menu");
+import { useRef } from 'react';
+
 
 const Navbar = () => {
-
+    const menuRef = useRef();
+    
     const toggleMobileMenu = () => {
-        menu.classList.toggle("hidden")
+        menuRef.current.classList.toggle("hidden")
     }
 
     return ( 
@@ -43,7 +45,7 @@ const Navbar = () => {
                 </div>
             </div>
             {/* mobile menu */}
-            <div className="hidden mobile-menu md:hidden text-center transition duration-500">
+            <div className="hidden mobile-menu md:hidden text-center transition duration-500" ref={menuRef}>
                 <a href="#/discord" className="block py-4 px-4 text-sm hover:bg-gray-200">Home</a>
                 <a href="#/news" className="block py-4 px-4 text-sm hover:bg-gray-200">News</a>
             </div>

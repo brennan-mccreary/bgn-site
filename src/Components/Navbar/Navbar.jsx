@@ -9,7 +9,7 @@ const Navbar = () => {
     }
 
     return ( 
-        <nav className="bg-gray-400 fixed top-0 right-0 left-0">
+        <nav className="bg-bgngray-900 fixed top-0 right-0 left-0 text-gray-300">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between">
                     {/* Primary Nav and Logo */}
@@ -25,14 +25,14 @@ const Navbar = () => {
                         </div>
                         {/* Primary Nav */}
                         <div className="hidden md:flex items-center space-x-3">
-                            <a href="#/" className="py-5 px-3 hover:text-gray-900">Home</a>
-                            <a href="#/news" className="py-5 px-3 hover:text-gray-900">News</a>
+                            <a href="#/discord" className="py-5 px-3 hover:text-gray-500">Home</a>
+                            <a href="#/news" className="py-5 px-3 hover:text-gray-500">News</a>
                         </div>
                     </div>
                     {/* Secondary Nav */}
                     <div className="hidden md:flex items-center space-x-1">
                         <a href="#/login" className="py-5 px-3 hover:text-gray-900">Login</a>
-                        <a href="#/signup" className="py-2 px-3 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 bg-bgngreen rounded-md shadow transition duration-300">Sign-up</a>
+                        <a href="#/signup" className="py-2 px-3 text-bgngray-900 hover:text-bgngray-700 bg-bgngreen-600 hover:bg-bgngreen-100 rounded-md shadow transition duration-200">Sign-up</a>
                     </div>
                     {/* Mobile button */}
                     <div className="md:hidden flex items-center">

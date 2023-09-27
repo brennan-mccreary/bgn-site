@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Navbar/>
-      <div className='bg-bgngray-900 h-screen'>
+      <div className='bg-bgngray-950 h-screen'>
         <Routes>
           <Route
             path='/'

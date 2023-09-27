@@ -3,7 +3,7 @@ import bgn_logo from '../../BGN-Logo.png'
 
 const Construction = () => {
     return(
-        <div className="App">
+        <div className="bg-slate-900">
             <header className="App-header">
                 <img src={bgn_logo} className="App-logo" alt="logo" />
                 <p>We are currently under construction...</p>

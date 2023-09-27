@@ -1,5 +1,6 @@
 //Package Imports
 import './App.css';
+import './index.css';
 import { Routes, Route } from "react-router-dom";
 
 //Pages Imports
@@ -9,7 +10,7 @@ import Error from './Pages/Error/Error';
 
 function App() {
   return (
-    <>
+    <div className='bg-bgngray h-screen'>
       <Routes>
         <Route
           path='/'
@@ -26,7 +27,7 @@ function App() {
           element={<Error/>}
         />
       </Routes>
-    </>
+    </div>
   );
 }
 

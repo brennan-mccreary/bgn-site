@@ -7,6 +7,9 @@ import { Routes, Route } from "react-router-dom";
 import Construction from './Pages/Construction/Construction';
 import Discord from './Pages/Discord/Discord';
 import Error from './Pages/Error/Error';
+import About from './Pages/About/About';
+
+//Component Imports
 import Navbar from './Components/Navbar/Navbar';
 
 function App() {
@@ -22,6 +25,10 @@ function App() {
           <Route
             path='/discord'
             element={<Discord/>}
+          />
+          <Route
+            path='/about'
+            element={<About/>}
           />
           
           

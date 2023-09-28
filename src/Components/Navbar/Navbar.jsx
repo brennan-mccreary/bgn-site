@@ -26,12 +26,12 @@ const Navbar = () => {
                         {/* Primary Nav */}
                         <div className="hidden md:flex items-center space-x-3">
                             <a href="#/discord" className="py-5 px-3 hover:text-gray-500">Home</a>
-                            <a href="#/news" className="py-5 px-3 hover:text-gray-500">News</a>
+                            <a href="#/about" className="py-5 px-3 hover:text-gray-500">About</a>
                         </div>
                     </div>
                     {/* Secondary Nav */}
                     <div className="hidden md:flex items-center space-x-1">
-                        <a href="#/login" className="py-5 px-3 hover:text-gray-900">Login</a>
+                        <a href="#/login" className="py-5 px-3 hover:text-gray-500">Login</a>
                         <a href="#/signup" className="py-2 px-3 text-bgngray-900 hover:text-bgngray-700 bg-bgngreen-600 hover:bg-bgngreen-100 rounded-md shadow transition duration-200">Sign-up</a>
                     </div>
                     {/* Mobile button */}

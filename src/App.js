@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <Navbar/>
-      <div className='bg-bgngray-950 h-screen'>
+      <div className='bg-gradient-to-t from-bgngray-900 to-bgngray-950 min-h-screen'>
         <Routes>
           <Route
             path='/'

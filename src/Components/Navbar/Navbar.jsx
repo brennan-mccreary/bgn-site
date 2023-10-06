@@ -9,7 +9,7 @@ const Navbar = () => {
     }
 
     return ( 
-        <nav className="bg-bgngray-900 fixed top-0 right-0 left-0 text-gray-300">
+        <nav className="bg-gradient-to-r from-bgngreen-950 via-bgngreen-700 via-50% to-bgngreen-950 fixed top-0 right-0 left-0 text-gray-300">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between">
                     {/* Primary Nav and Logo */}
@@ -25,14 +25,14 @@ const Navbar = () => {
                         </div>
                         {/* Primary Nav */}
                         <div className="hidden md:flex items-center space-x-3">
-                            <a href="#/discord" className="py-5 px-3 hover:text-gray-500">Home</a>
-                            <a href="#/about" className="py-5 px-3 hover:text-gray-500">About</a>
+                            <a href="#/discord" className="py-5 px-3 font-semibold hover:text-gray-500">Home</a>
+                            <a href="#/about" className="py-5 px-3 font-semibold hover:text-gray-500">About</a>
                         </div>
                     </div>
                     {/* Secondary Nav */}
                     <div className="hidden md:flex items-center space-x-1">
-                        <a href="#/login" className="py-5 px-3 hover:text-gray-500">Login</a>
-                        <a href="#/signup" className="py-2 px-3 text-bgngray-900 hover:text-bgngray-700 bg-bgngreen-600 hover:bg-bgngreen-100 rounded-md shadow transition duration-200">Sign-up</a>
+                        <a href="#/login" className="py-5 px-3 font-semibold hover:text-gray-500">Login</a>
+                        <a href="#/signup" className="py-2 px-3 font-semibold shadow-md shadow-bgngray-900/80 hover:shadow-inner text-bgngray-950 hover:text-bgngray-700 bg-bgngreen-600 hover:bg-bgngreen-100 rounded-md transition duration-200">Sign-up</a>
                     </div>
                     {/* Mobile button */}
                     <div className="md:hidden flex items-center">
@@ -46,8 +46,8 @@ const Navbar = () => {
             </div>
             {/* mobile menu */}
             <div className="hidden mobile-menu md:hidden text-center transition duration-500" ref={menuRef}>
-                <a href="#/discord" className="block py-4 px-4 text-sm hover:bg-gray-200">Home</a>
-                <a href="#/news" className="block py-4 px-4 text-sm hover:bg-gray-200">News</a>
+                <a href="#/discord" className="block font-semibold py-4 px-4 text-sm hover:bg-gray-200">Home</a>
+                <a href="#/news" className="block font-semibold py-4 px-4 text-sm hover:bg-gray-200">News</a>
             </div>
         </nav>
      );

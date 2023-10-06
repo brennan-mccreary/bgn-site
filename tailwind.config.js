@@ -31,6 +31,14 @@ module.exports = {
           950: "#003304"
         },
       },
+      
+      boxShadow: {
+        'surround': [
+            '0 0px 15px rgba(0, 0, 0, 0.25)',
+            '0 0px 35px rgba(0, 0, 0, 0.15)',
+        ]
+      },
+
     },
   },
   plugins: [],

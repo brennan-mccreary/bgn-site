@@ -4,7 +4,7 @@ import './index.css';
 import { Routes, Route } from "react-router-dom";
 
 //Pages Imports
-import Construction from './Pages/Construction/Construction';
+import Home from './Pages/Home/Home';
 import Discord from './Pages/Discord/Discord';
 import Error from './Pages/Error/Error';
 import About from './Pages/About/About';
@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route
             path='/'
-            element={<Construction/>}
+            element={<Home/>}
           />
           <Route
             path='/discord'

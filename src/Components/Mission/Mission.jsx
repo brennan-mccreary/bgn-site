@@ -1,6 +1,6 @@
 const Mission = () => {
     return ( 
-        <div className="pt-40 pb-10 min-w-fit md:min-w-min px-4 w-3/4 md:w-2/3 xl:w-1/3  mx-auto">
+        <div className="pt-40 pb-10 min-w-fit md:min-w-min px-4 w-3/4 md:w-2/3 mx-auto">
             <h1 className="text-5xl text-bgngreen-400 font-mono font-bold text-center pb-5">
                 Our Mission...
             </h1>

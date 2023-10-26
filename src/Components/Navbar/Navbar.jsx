@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import TreeSVG from '../../Images/TreeSVG.svg'
+import TreeSVG from '../../Images/TreeSVG'
 
 const Navbar = () => {
     const menuRef = useRef();
@@ -17,21 +17,21 @@ const Navbar = () => {
                         {/* Logo */}
                         <div>
                             <a href="/" className="flex items-center py-5 px-3 ">
-                                <img src={TreeSVG} className='w-8 h-8 mx-2 ' alt="Tree" />
-                                <span className="font-bold text-xl">Branch Out.</span>
+                                <TreeSVG className="h-8 mx-2"/>
+                                <span className="font-bold text-xl text-bgngray-50">Branch Out.</span>
                             </a>
                         </div>
                         {/* Primary Nav */}
                         <div className="hidden md:flex items-center space-x-3">
-                            <a href="#/" className="py-5 px-3 font-semibold hover:text-gray-100">Home</a>
-                            <a href="#/about" className="py-5 px-3 font-semibold hover:text-gray-100">About</a>
+                            <a href="#/" className="py-5 px-3 font-semibold text-bgngray-50 hover:text-gray-300">Home</a>
+                            <a href="#/about" className="py-5 px-3 font-semibold text-bgngray-50 hover:text-gray-300">About</a>
                         </div>
                     </div>
                     {/* Secondary Nav */}
                     <div className="hidden md:flex items-center space-x-1">
                         <a href="#/login" hidden="true" className="py-5 px-3 font-semibold hover:text-gray-500">Login</a>
                         <a href="#/signup" hidden="true" className="py-2 px-3 font-semibold shadow-md shadow-bgngray-900/80 hover:shadow-inner text-bgngray-950 hover:text-bgngray-700 bg-bgngreen-600 hover:bg-bgngreen-100 rounded-md transition duration-200">Sign-up</a>
-                        <a href="#/discord" className="py-2 px-3 font-semibold shadow-md shadow-bgngray-900/80 hover:shadow-inner text-bgngray-950 hover:text-bgngray-700 bg-bgngreen-600 hover:bg-bgngreen-100 rounded-md transition duration-200">Join Our Discord</a>
+                        <a href="#/discord" className="py-2 px-3 font-semibold shadow-md shadow-bgngray-900/80 hover:shadow-inner text-bgngray-950 hover:text-bgngray-700 bg-bgngreen-600 hover:bg-bgngreen-400 rounded-md transition duration-200">Join Our Discord</a>
                     </div>
                     {/* Mobile button */}
                     <div className="md:hidden flex items-center">

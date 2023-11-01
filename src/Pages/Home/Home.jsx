@@ -1,6 +1,7 @@
 //Component Imports
 import HomeHeader from "../../Components/HomeHeader/HomeHeader";
 import PartnerApply from "../../Components/PartnerApply/PartnerApply";
+import PartnerProfiles from "../../Components/PartnerProfiles/PartnerProfiles";
 import YoutubeEmbed from "../../Components/YoutubeEmbed/YoutubeEmbed";
 
 const Home = () => {
@@ -16,8 +17,8 @@ const Home = () => {
                 <div className="row-start-3  lg:col-span-2 lg:col-start-1 lg:row-start-3 bg-slate-300 ">
                     Check us out on social media
                 </div>
-                <div className="col-span-2 row-start-2 lg:row-span-2 lg:col-start-3 lg:row-start-1  bg-slate-500">
-                    Our Partnered Streamers
+                <div className="col-span-2 row-start-2 lg:row-span-2 lg:col-start-3 lg:row-start-1">
+                    <PartnerProfiles/>
                 </div>
                 <div className="row-start-3 lg:col-start-3 lg:row-start-3 ">
                     <PartnerApply/>

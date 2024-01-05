@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'circuitry': "url('Images/image(8).png')",
+        'trees': "url('Images/image(10).png')"
+       },
       colors: {
         'bgngray': {
           50: "#f5f6f6",

@@ -15,7 +15,7 @@ import Navbar from './Components/Navbar/Navbar';
 function App() {
   return (
     <>
-      <Navbar/>
+      {/* <Navbar/> */}
       <div className='bg-gradient-to-t from-bgngray-900 to-bgngray-950 min-h-screen'>
         <Routes>
           <Route

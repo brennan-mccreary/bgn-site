@@ -1,5 +1,4 @@
 import React from 'react';
-import TreeSVG from '../../Images/TreeSVG';
 
 const PartnerApply = () => {
     return ( 

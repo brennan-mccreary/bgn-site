@@ -1,45 +1,42 @@
 //Package Imports
 import './App.css';
 import './index.css';
-import { Routes, Route } from "react-router-dom";
+import { createHashRouter, createRoutesFromElements, Route, RouterProvider} from 'react-router-dom';
 
 //Pages Imports
-import Home from './Pages/Home/Home';
-import Discord from './Pages/Discord/Discord';
-import Error from './Pages/Error/Error';
-import About from './Pages/About/About';
+import SponsorBanner from './Components/Animations/SponsorBanner';
 
 //Component Imports
-import Navbar from './Components/Navbar/Navbar';
+import Construction from './Pages/Construction/Construction'
+
+//Layout Imports
+import UtilitiesLayout from './Components/Layouts/UtilitiesLayout';
+import StyledLayout from './Components/Layouts/StyledLayout';
+import RootLayout from './Components/Layouts/RootLayout';
+
+const router = createHashRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<RootLayout/>}>
+      {/* <Route element={<StyledLayout/>}>
+        <Route
+          index
+          element={<Home/>}
+        />
+      </Route> */}
+      <Route
+          index
+          element={<Construction/>}
+        />
+      <Route path='utilities' elemenet={<UtilitiesLayout/>}>
+        <Route path='sponsor-banner' element={<SponsorBanner/>}/>
+      </Route>
+    </Route>
+  )
+)
 
 function App() {
   return (
-    <>
-      <Navbar/>
-      <div className='bg-gradient-to-t from-bgngray-900 to-bgngray-950 min-h-screen'>
-        <Routes>
-          <Route
-            path='/'
-            element={<Home/>}
-          />
-          <Route
-            path='/discord'
-            element={<Discord/>}
-          />
-          <Route
-            path='/about'
-            element={<About/>}
-          />
-          
-          
-          <Route
-            path='/*'
-            element={<Error/>}
-          />
-        </Routes>
-      </div>
-    </>
-    
+    <RouterProvider router={router}/>
   );
 }
 

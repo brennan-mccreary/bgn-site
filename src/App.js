@@ -5,6 +5,7 @@ import { createHashRouter, createRoutesFromElements, Route, RouterProvider} from
 
 //Pages Imports
 import SponsorBanner from './Components/Animations/SponsorBanner';
+import Discord from './Pages/Discord/Discord'
 
 //Component Imports
 import Construction from './Pages/Construction/Construction'
@@ -26,6 +27,10 @@ const router = createHashRouter(
       <Route
           index
           element={<Construction/>}
+        />
+      <Route
+          path='discord'
+          element={<Discord/>}
         />
       <Route path='utilities' elemenet={<UtilitiesLayout/>}>
         <Route path='sponsor-banner' element={<SponsorBanner/>}/>

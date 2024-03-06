@@ -33,8 +33,8 @@ const SponsorBanner = () => {
     const [isPresent, setIsPresent] = useState(false);
     let delay;
 
-    const hangTime = 5000;
-    const downTime = 10000;
+    const hangTime = 15000;
+    const downTime = 1200000;
 
     useEffect(() => {
         animate();

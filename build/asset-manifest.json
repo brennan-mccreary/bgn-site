@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.274d8e67.css",
-    "main.js": "/static/js/main.358b18d5.js",
+    "main.css": "/static/css/main.7969e574.css",
+    "main.js": "/static/js/main.ccffc1b6.js",
     "static/media/image(10).png": "/static/media/image(10).ceed7aef3cf21a715698.png",
     "static/media/image(8).png": "/static/media/image(8).d9496d80a77cfb8c0a12.png",
     "static/media/BGN-Logo.png": "/static/media/BGN-Logo.034c1017e1ff88060c42.png",
     "index.html": "/index.html",
-    "main.274d8e67.css.map": "/static/css/main.274d8e67.css.map",
-    "main.358b18d5.js.map": "/static/js/main.358b18d5.js.map"
+    "main.7969e574.css.map": "/static/css/main.7969e574.css.map",
+    "main.ccffc1b6.js.map": "/static/js/main.ccffc1b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.274d8e67.css",
-    "static/js/main.358b18d5.js"
+    "static/css/main.7969e574.css",
+    "static/js/main.ccffc1b6.js"
   ]
 }

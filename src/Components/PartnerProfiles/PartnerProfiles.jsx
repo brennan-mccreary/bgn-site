@@ -34,41 +34,41 @@ const PartnerProfiles = () => {
 
 
     return ( 
-        <>
-            <div className='text-center text-2xl xl:text-3xl text-bgngreen-400 font-mono font-bold'>
+        <section className='w-2/3 h-full justify-center items-center m-auto flex '>
+            {/* <div className='text-center text-2xl xl:text-3xl text-bgngreen-400 font-mono font-bold'>
                     <p>Branched Partners</p>
-            </div>
-            <div className='max-w-2/3 h-96 xl:mt-10 w-full px-4 mb-10 relative group'>
-            <div
-                style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-                className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
-            ></div>
-            {/* Left Arrow */}
-            <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-                <ChevronLeft onClick={prevSlide}/>
-            </div>
-            {/* Right Arrow */}
-            <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
-                <ChevronRight onClick={nextSlide}/>
-            </div>
-            <div className='flex top-4 justify-center py-2'>
-                {slides.map((slide, slideIndex) => (
+            </div> */}
+            <div className=' w-full max-w-1/3 h-96 xl:mt-10 relative group '>
                 <div
-                    key={slideIndex}
-                    onClick={() => goToSlide(slideIndex)}
-                    className='text-2xl cursor-pointer'
-                >
-                    {
-                        currentIndex === slideIndex ? 
-                        <DotSVG className="fill-bgngreen-400"/>
-                        :
-                        <DotSVG className="fill-bgngray-50"/>
-                    }  
+                    style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+                    className='w-full h-full rounded-2xl bg-center bg-cover duration-500 outline-bgngreen-500 outline outline-2 outline-offset-4'
+                ></div>
+                {/* Left Arrow */}
+                <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+                    <ChevronLeft onClick={prevSlide}/>
                 </div>
-                ))}
+                {/* Right Arrow */}
+                <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
+                    <ChevronRight onClick={nextSlide}/>
+                </div>
+                <div className='flex top-4 justify-center py-2'>
+                    {slides.map((slide, slideIndex) => (
+                    <div
+                        key={slideIndex}
+                        onClick={() => goToSlide(slideIndex)}
+                        className='text-2xl cursor-pointer'
+                    >
+                        {
+                            currentIndex === slideIndex ? 
+                            <DotSVG className="fill-bgngreen-400"/>
+                            :
+                            <DotSVG className="fill-bgngray-50"/>
+                        }  
+                    </div>
+                    ))}
+                </div>
             </div>
-            </div>
-        </>
+        </section>
      );
 }
  

@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom';
 const StyledLayout = () => {
     return ( 
         <div>
-            <Navbar/>
+            {/* <Navbar/> */}
             <Outlet/>
         </div>
      );

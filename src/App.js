@@ -9,6 +9,7 @@ import Discord from './Pages/Discord/Discord'
 
 //Component Imports
 import Construction from './Pages/Construction/Construction'
+import Home from './Pages/Home/Home'
 
 //Layout Imports
 import UtilitiesLayout from './Components/Layouts/UtilitiesLayout';
@@ -18,16 +19,16 @@ import RootLayout from './Components/Layouts/RootLayout';
 const router = createHashRouter(
   createRoutesFromElements(
     <Route path='/' element={<RootLayout/>}>
-      {/* <Route element={<StyledLayout/>}>
+      <Route element={<StyledLayout/>}>
         <Route
           index
           element={<Home/>}
         />
-      </Route> */}
-      <Route
+      </Route>
+      {/* <Route
           index
           element={<Construction/>}
-        />
+        /> */}
       <Route
           path='discord'
           element={<Discord/>}
